@@ -7,23 +7,27 @@ import {
 } from "react-router-dom";
 import Login from "./pages/Login";
 import Welcome from "./pages/Welcome";
+import Dashboard from "./pages/Dashboard";
 
 export default function App() {
-  const [userEmail, setUserEmail] = useState(null);
-  const [userPassword, setUserPassword] = useState(null);
+  // const [userEmail, setUserEmail] = useState(null);
+  // const [userPassword, setUserPassword] = useState(null);
+  const [user, setUser] = useState(null);
 
   const handleLogin = (email, password) => {
-    setUserEmail(email);
-    setUserPassword(password);
+    // setUserEmail(email);
+    // setUserPassword(password);
+    setUser({ email, password });
   };
 
   return (
     <Router>
       <Routes>
+        {/* login page routing */}
         <Route
           path="/"
           element={
-            userEmail && userPassword ? (
+            user ? (
               <Navigate to="/welcome" />
             ) : (
               <div className="bg-stone-400 min-h-screen">
@@ -32,15 +36,15 @@ export default function App() {
             )
           }
         />
+        {/* welcome page routing */}
         <Route
           path="/welcome"
-          element={
-            userEmail && userPassword ? (
-              <Welcome userEmail={userEmail} />
-            ) : (
-              <Navigate to="/" />
-            )
-          }
+          element={user ? <Welcome user={user} /> : <Navigate to="/" />}
+        />
+        {/* dashboard page routing */}
+        <Route
+          path="/dashboard"
+          element={user ? <Dashboard user={user} /> : <Navigate to="/" />}
         />
       </Routes>
     </Router>
