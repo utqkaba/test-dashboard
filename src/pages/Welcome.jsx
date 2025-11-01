@@ -9,6 +9,8 @@ export default function Welcome({ user }) {
 
   return (
     <div className="flex flex-col items-center justify-center min-h-screen bg-stone-300">
+      <img src="/dashboard.svg" alt="logo" className="w-24 h-24 mb-4" />
+
       <h1 className="text-5xl font-extralight text-shadow-lg mb-4">
         Welcome, {user.email}
       </h1>
