@@ -1,20 +1,20 @@
 import { useState } from "react";
 
-export default function LoginForm({ onLogin }) {
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
+export default function Login({ onLogin }) {
+  const [userEmail, setUserEmail] = useState("");
+  const [userPassword, setUserPassword] = useState("");
   const [error, setError] = useState("");
 
   const handleSubmit = (e) => {
     e.preventDefault();
-
-    if (!email || !password) {
+    if (userEmail === "admin@example.com" && userPassword === "admin123") {
+      onLogin(userEmail, userPassword);
+    } else if (userEmail === "" && userPassword === "") {
       setError("email and password required!");
       return;
+    } else {
+      alert("Invalid email or password!");
     }
-
-    setError("");
-    onLogin?.({ email });
   };
 
   return (
@@ -33,16 +33,16 @@ export default function LoginForm({ onLogin }) {
           type="email"
           placeholder="email"
           className="bg-stone-200 w-full sm:w-2/3 border border-stone-900 p-2 rounded-xl"
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
+          value={userEmail}
+          onChange={(e) => setUserEmail(e.target.value)}
         />
 
         <input
           type="password"
           placeholder="password"
           className="bg-stone-200 w-full sm:w-2/3 border border-stone-900 p-2 rounded-xl"
-          value={password}
-          onChange={(e) => setPassword(e.target.value)}
+          value={userPassword}
+          onChange={(e) => setUserPassword(e.target.value)}
         />
 
         {error && <p className="font-extralight text-red-700">{error}</p>}
