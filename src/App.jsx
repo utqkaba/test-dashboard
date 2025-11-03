@@ -8,43 +8,54 @@ import {
 import Login from "./pages/Login";
 import Welcome from "./pages/Welcome";
 import Dashboard from "./pages/Dashboard";
+import DashboardLayout from "./layouts/DashboardLayout";
 
 export default function App() {
-  // const [userEmail, setUserEmail] = useState(null);
-  // const [userPassword, setUserPassword] = useState(null);
   const [user, setUser] = useState(null);
 
   const handleLogin = (email, password) => {
-    // setUserEmail(email);
-    // setUserPassword(password);
     setUser({ email, password });
+  };
+
+  const handleLogout = () => {
+    setUser(null);
   };
 
   return (
     <Router>
       <Routes>
-        {/* login page routing */}
+        {/* LOGIN ROUTE */}
         <Route
           path="/"
           element={
             user ? (
               <Navigate to="/welcome" />
             ) : (
-              <div className="bg-stone-400 min-h-screen">
+              <div className="bg-stone-200 min-h-screen">
                 <Login onLogin={handleLogin} />
               </div>
             )
           }
         />
-        {/* welcome page routing */}
+
+        {/* WELCOME ROUTE */}
         <Route
           path="/welcome"
           element={user ? <Welcome user={user} /> : <Navigate to="/" />}
         />
-        {/* dashboard page routing */}
+
+        {/* DASHBOARD ROUTE */}
         <Route
           path="/dashboard"
-          element={user ? <Dashboard user={user} /> : <Navigate to="/" />}
+          element={
+            user ? (
+              <DashboardLayout onLogout={handleLogout}>
+                <Dashboard user={user} />
+              </DashboardLayout>
+            ) : (
+              <Navigate to="/" />
+            )
+          }
         />
       </Routes>
     </Router>
