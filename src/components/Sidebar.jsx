@@ -37,12 +37,12 @@ export default function Sidebar({ onLogout }) {
             className={({ isActive }) =>
               `flex items-center w-full font-extralight text-stone-900 px-3 py-4 rounded-lg hover:scale-105 transition ${
                 isActive
-                  ? "bg-stone-200 text-blue-400"
-                  : "text-stone-900 hover:bg-gray-100"
+                  ? "bg-linear-to-r from-stone-100 to-stone-300"
+                  : "text-stone-900"
               }`
             }
           >
-            <item.icon className="w-5 h-5 mr-3 text-gray-500" />
+            <item.icon className="w-5 h-5 mr-3 text-stone-500" />
             <span className="text-sm">{item.name}</span>
           </NavLink>
         ))}
