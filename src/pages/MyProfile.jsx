@@ -26,7 +26,7 @@ export default function MyProfile({ user }) {
           </div>
         </div>
 
-        <div className="flex flex-col mt-4 space-y-2 px-14">
+        <div className="flex flex-col mt-4 space-y-2 px-14 mb-6">
           <p>
             Username: <span className="font-extralight">{user?.email}</span>
           </p>
