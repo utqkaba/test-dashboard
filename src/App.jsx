@@ -8,6 +8,7 @@ import {
 import Login from "./pages/Login";
 import Welcome from "./pages/Welcome";
 import Dashboard from "./pages/Dashboard";
+import MyProfile from "./pages/MyProfile";
 import DashboardLayout from "./layouts/DashboardLayout";
 
 export default function App() {
@@ -44,19 +45,20 @@ export default function App() {
           element={user ? <Welcome user={user} /> : <Navigate to="/" />}
         />
 
-        {/* DASHBOARD ROUTE */}
+        {/* DASHBOARD LAYOUT + INNER ROUTES */}
         <Route
-          path="/dashboard"
+          path="/"
           element={
             user ? (
-              <DashboardLayout onLogout={handleLogout}>
-                <Dashboard user={user} />
-              </DashboardLayout>
+              <DashboardLayout user={user} onLogout={handleLogout} />
             ) : (
               <Navigate to="/" />
             )
           }
-        />
+        >
+          <Route path="dashboard" element={<Dashboard user={user} />} />
+          <Route path="profile" element={<MyProfile user={user} />} />
+        </Route>
       </Routes>
     </Router>
   );
