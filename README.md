@@ -1,20 +1,29 @@
-#Mini Dashboard
+# Mini-Dashboard
 
-A mini-dashboard project built with React, Vite, Tailwind CSS v4, and Vitest.
-Designed for practicing React components, state management, events, async calls, and testing.
+A simple user listing app built with **React** and **Vite**.  
+Data is fetched from **JSONPlaceholder API** and displayed in responsive user cards with a **fixed sidebar** layout.
 
-🔹 Features
+---
 
-- LoginForm – input handling & validation
+## 🚀 Features
+- Fetch users from API  
+- Filter users by name  
+- Responsive card layout  
+- Fixed sidebar navigation  
+- Fast development with Vite  
 
-- ToggleText – toggle state component
+---
 
-- Button – reusable button with callback
+## 🧱 Tech Stack
+- **React** – UI components  
+- **Vite** – Build & dev environment  
+- **React Router DOM** – Page routing  
+- **Tailwind CSS** – Styling  
+- **JSONPlaceholder** – Mock API  
 
-- UserInfo – async fetch with mock testing
+---
 
-- Fully responsive layout using Tailwind CSS v4
-
-🛠 Technologies
-
-React | Vite | Tailwind CSS v4 | Vitest | React Testing Library | JS-DOM
+## ⚙️ Setup
+```bash
+npm install
+npm run dev
