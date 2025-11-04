@@ -55,7 +55,9 @@ export default function Sidebar({ onLogout }) {
         </button>
       </nav>
       <footer className="absolute bottom-3 left-0 w-full font-extralight text-shadow-lg text-center text-xs text-stone-900">
-        © 2025 Utku Kaba
+        <a href="https://github.com/utqkaba" target="_blank">
+          © 2025 Utku Kaba
+        </a>
       </footer>
     </aside>
   );
