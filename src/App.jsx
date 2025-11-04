@@ -9,6 +9,7 @@ import Login from "./pages/Login";
 import Welcome from "./pages/Welcome";
 import Dashboard from "./pages/Dashboard";
 import MyProfile from "./pages/MyProfile";
+import Users from "./pages/Users";
 import DashboardLayout from "./layouts/DashboardLayout";
 
 export default function App() {
@@ -58,6 +59,7 @@ export default function App() {
         >
           <Route path="dashboard" element={<Dashboard user={user} />} />
           <Route path="profile" element={<MyProfile user={user} />} />
+          <Route path="users" element={<Users user={user} />} />
         </Route>
       </Routes>
     </Router>
