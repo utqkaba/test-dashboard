@@ -6,7 +6,7 @@ export default function MyProfile({ user }) {
   const [showPassword, setShowPassword] = useState(false);
 
   return (
-    <div>
+    <div className="m-0 p-0">
       <PageHeader title="My Profile" />
       <div className="tracking-wide text-lg bg-stone-100 rounded-xl shadow-lg p-6 w-11/12 sm:w-4/5 md:w-3/4 lg:w-7/12 xl:w-7/12 max-w-4xl mx-auto font-medium text-stone-900">
         <div className="flex flex-row justify-evenly border-b border-stone-200 pb-4">
