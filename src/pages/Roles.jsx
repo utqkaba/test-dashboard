@@ -65,7 +65,9 @@ export default function Roles() {
                     key={user.id}
                     className="border-b border-stone-100 hover:bg-stone-200 transition"
                   >
-                    <td className="py-2 px-3 font-extralight">{user.name}</td>
+                    <td className="py-2 px-3 font-extralight">
+                      {user.id} - {user.name}
+                    </td>
                     <td className="py-2 px-3 text-red-600 font-light">
                       {user.role}
                     </td>
