@@ -33,22 +33,25 @@ Data is fetched from **JSONPlaceholder API** and displayed in responsive user ca
 npm install
 npm run dev
 
-## 📸 App Screenshots
-A few preview images from the project interface:
+## 📸 Screenshots
 
-<p align="center">
-  <img src="./screenshots/login.png" width="45%" alt="Login Page"/>
-  <img src="./screenshots/welcome.png" width="45%" alt="Welcome Screen"/>
-</p>
+### Dashboard
+![Dashboard](./screenshots/dashboard.png)
 
-<p align="center">
-  <img src="./screenshots/dashboard.png" width="45%" alt="Dashboard Screen"/>
-  <img src="./screenshots/profile.png" width="45%" alt="Profile Screen"/>
-</p>
+### Users
+![Users](./screenshots/users.png)
 
-<p align="center">
-  <img src="./screenshots/users.png" width="45%" alt="Users Screen"/>
-  <img src="./screenshots/roles.png" width="45%" alt="Roles & Permissions"/>
-</p>
+### Roles & Permissions
+![Roles](./screenshots/roles.png)
+
+### Profile
+![Profile](./screenshots/profile.png)
+
+### Login
+![Login](./screenshots/login.png)
+
+### Welcome
+![Welcome](./screenshots/welcome.png)
+
 
 
