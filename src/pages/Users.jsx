@@ -50,7 +50,7 @@ export default function Users() {
           filteredUsers.map((user) => (
             <div
               key={user.id}
-              className="bg-stone-100 rounded-xl shadow-lg p-6 w-11/12 sm:w-4/5 md:w-3/4 lg:w-2/3 xl:w-1/2 max-w-2xl hover:shadow-2xl transition"
+              className="bg-stone-100 rounded-xl shadow-lg p-6 w-11/12 sm:w-4/5 md:w-6/8 lg:w-2/3 xl:w-5/8 max-w-2xl hover:shadow-2xl transition"
             >
               <h2 className="text-2xl text-shadow-md font-light text-stone-900 border-b border-stone-200 mb-2 pb-2">
                 {user.id} - {user.name}
