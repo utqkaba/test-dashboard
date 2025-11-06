@@ -60,7 +60,7 @@ export default function Dashboard() {
       </div>
 
       {/* Alt kısım: Grafikler */}
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 px-18 py-6 justify-items-center">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 px-14 py-6 justify-items-center">
         {/* User Role Distribution */}
         <div className="bg-stone-100 rounded-xl shadow-lg w-11/12 sm:w-5/6 lg:w-5/6 p-6">
           <h3 className="text-xl font-medium text-stone-900 text-center mb-4 text-shadow-lg">
