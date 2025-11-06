@@ -32,26 +32,24 @@ Data is fetched from **JSONPlaceholder API** and displayed in responsive user ca
 ```bash
 npm install
 npm run dev
+```
 
-## 📸 Screenshots
+---
 
-### Dashboard
-![Dashboard](./screenshots/dashboard.png)
+- login screen:
+![login](screenshots/login.png)
+- welcome screen:
+![welcome](screenshots/welcome.png)
+- dashboard screen:
+![dashboard](screenshots/dashboard.png)
+- profile screen:
+![profile](screenshots/profile.png)
+- users screen:
+![users](screenshots/users.png)
+- roles screen:
+![roles](screenshots/roles.png)
 
-### Users
-![Users](./screenshots/users.png)
 
-### Roles & Permissions
-![Roles](./screenshots/roles.png)
-
-### Profile
-![Profile](./screenshots/profile.png)
-
-### Login
-![Login](./screenshots/login.png)
-
-### Welcome
-![Welcome](./screenshots/welcome.png)
 
 
 
