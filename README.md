@@ -16,10 +16,12 @@ Data is fetched from **JSONPlaceholder API** and displayed in responsive user ca
 
 ## 🧱 Tech Stack
 - **React** – UI components  
-- **Vite** – Build & dev environment  
+- **Vite** – Build & dev environment
+- **Vitest** - Unit Test
 - **React Router DOM** – Page routing  
 - **Tailwind CSS** – Styling  
-- **JSONPlaceholder** – Mock API  
+- **JSONPlaceholder** – Mock API
+- **Rechart** – Charts 
 
 ---
 
