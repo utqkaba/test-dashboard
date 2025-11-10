@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1762800399478" clover="3.2.0">
+  <project timestamp="1762800399478" name="All files">
+    <metrics statements="61" coveredstatements="55" conditionals="72" coveredconditionals="51" methods="13" coveredmethods="11" elements="146" coveredelements="117" complexity="0" loc="61" ncloc="61" packages="2" files="3" classes="3"/>
+    <package name="components">
+      <metrics statements="28" coveredstatements="24" conditionals="28" coveredconditionals="14" methods="3" coveredmethods="2"/>
+      <file name="PageHeader.jsx" path="/Users/utkukaba/Desktop/test-dashboard/src/components/PageHeader.jsx">
+        <metrics statements="4" coveredstatements="4" conditionals="4" coveredconditionals="2" methods="1" coveredmethods="1"/>
+        <line num="1" count="4" type="cond" truecount="1" falsecount="1"/>
+        <line num="3" count="4" type="stmt"/>
+        <line num="5" count="4" type="cond" truecount="1" falsecount="1"/>
+        <line num="7" count="4" type="stmt"/>
+      </file>
+      <file name="Sidebar.jsx" path="/Users/utkukaba/Desktop/test-dashboard/src/components/Sidebar.jsx">
+        <metrics statements="24" coveredstatements="20" conditionals="24" coveredconditionals="12" methods="2" coveredmethods="1"/>
+        <line num="5" count="12" type="cond" truecount="1" falsecount="1"/>
+        <line num="6" count="3" type="stmt"/>
+        <line num="11" count="0" type="stmt"/>
+        <line num="13" count="3" type="cond" truecount="1" falsecount="1"/>
+        <line num="15" count="3" type="stmt"/>
+        <line num="16" count="0" type="stmt"/>
+        <line num="17" count="0" type="stmt"/>
+        <line num="18" count="3" type="cond" truecount="1" falsecount="1"/>
+        <line num="20" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="21" count="3" type="cond" truecount="1" falsecount="1"/>
+        <line num="25" count="3" type="stmt"/>
+        <line num="26" count="3" type="stmt"/>
+        <line num="27" count="3" type="cond" truecount="1" falsecount="1"/>
+        <line num="31" count="3" type="cond" truecount="1" falsecount="1"/>
+        <line num="32" count="3" type="stmt"/>
+        <line num="33" count="3" type="stmt"/>
+        <line num="37" count="12" type="stmt"/>
+        <line num="48" count="3" type="cond" truecount="1" falsecount="1"/>
+        <line num="53" count="3" type="stmt"/>
+        <line num="54" count="3" type="cond" truecount="1" falsecount="1"/>
+        <line num="56" count="3" type="cond" truecount="1" falsecount="1"/>
+        <line num="57" count="3" type="stmt"/>
+        <line num="61" count="3" type="cond" truecount="1" falsecount="1"/>
+        <line num="62" count="3" type="stmt"/>
+      </file>
+    </package>
+    <package name="pages">
+      <metrics statements="33" coveredstatements="31" conditionals="44" coveredconditionals="37" methods="10" coveredmethods="9"/>
+      <file name="Users.jsx" path="/Users/utkukaba/Desktop/test-dashboard/src/pages/Users.jsx">
+        <metrics statements="33" coveredstatements="31" conditionals="44" coveredconditionals="37" methods="10" coveredmethods="9"/>
+        <line num="4" count="8" type="cond" truecount="2" falsecount="0"/>
+        <line num="5" count="8" type="stmt"/>
+        <line num="6" count="8" type="stmt"/>
+        <line num="7" count="8" type="stmt"/>
+        <line num="8" count="8" type="cond" truecount="2" falsecount="0"/>
+        <line num="10" count="8" type="stmt"/>
+        <line num="11" count="3" type="stmt"/>
+        <line num="14" count="3" type="stmt"/>
+        <line num="15" count="3" type="stmt"/>
+        <line num="18" count="0" type="stmt"/>
+        <line num="19" count="0" type="stmt"/>
+        <line num="21" count="8" type="cond" truecount="4" falsecount="2"/>
+        <line num="23" count="8" type="stmt"/>
+        <line num="24" count="10" type="stmt"/>
+        <line num="25" count="8" type="cond" truecount="2" falsecount="0"/>
+        <line num="27" count="3" type="cond" truecount="1" falsecount="1"/>
+        <line num="29" count="8" type="stmt"/>
+        <line num="31" count="8" type="cond" truecount="4" falsecount="0"/>
+        <line num="35" count="5" type="stmt"/>
+        <line num="36" count="1" type="cond" truecount="1" falsecount="1"/>
+        <line num="37" count="2" type="stmt"/>
+        <line num="40" count="5" type="cond" truecount="2" falsecount="0"/>
+        <line num="41" count="5" type="cond" truecount="2" falsecount="0"/>
+        <line num="43" count="4" type="stmt"/>
+        <line num="48" count="5" type="cond" truecount="2" falsecount="0"/>
+        <line num="51" count="1" type="stmt"/>
+        <line num="53" count="5" type="stmt"/>
+        <line num="54" count="5" type="cond" truecount="1" falsecount="1"/>
+        <line num="56" count="9" type="stmt"/>
+        <line num="59" count="1" type="stmt"/>
+        <line num="104" count="5" type="cond" truecount="5" falsecount="1"/>
+        <line num="105" count="5" type="cond" truecount="5" falsecount="1"/>
+        <line num="106" count="5" type="stmt"/>
+      </file>
+    </package>
+  </project>
+</coverage>
