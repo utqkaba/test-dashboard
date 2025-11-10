@@ -1,7 +1,10 @@
 # Mini-Dashboard
 
-A simple user listing app built with **React** and **Vite**. **Vitest** was used for the application's unit tests.
-Data is fetched from **JSONPlaceholder API** and displayed in responsive user cards with a **fixed sidebar** layout.
+- The primary goal of the project is to improve testing capabilities. 
+- A simple user listing application built with **React** and **Vite**. 
+- **Vitest** was used for the application's unit tests. 
+- **Cypress** was used for e2e tests.
+- Data is retrieved from the **JSONPlaceholder API** and displayed in responsive user cards with a **fixed sidebar** layout.
 
 ---
 
