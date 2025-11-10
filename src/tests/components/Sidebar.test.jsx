@@ -38,4 +38,15 @@ describe("Sidebar Component", () => {
       "to-stone-300"
     );
   });
+
+  it("matches snapshot", () => {
+    const { container } = render(
+      <MemoryRouter>
+        <Sidebar />
+      </MemoryRouter>
+    );
+
+    // Sidebar'in HTML yapısını snapshot olarak kaydeder
+    expect(container).toMatchSnapshot();
+  });
 });
