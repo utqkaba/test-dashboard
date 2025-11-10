@@ -35,7 +35,8 @@ npm run dev
 ```
 
 ---
-
+- coverage report:
+![login](screenshots/coverage%20report.png)
 - login screen:
 ![login](screenshots/login.png)
 - welcome screen:
