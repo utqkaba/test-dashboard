@@ -1,6 +1,6 @@
 # Mini-Dashboard
 
-A simple user listing app built with **React** and **Vite**.  
+A simple user listing app built with **React** and **Vite**. **Vitest** was used for the application's unit tests.
 Data is fetched from **JSONPlaceholder API** and displayed in responsive user cards with a **fixed sidebar** layout.
 
 ---
